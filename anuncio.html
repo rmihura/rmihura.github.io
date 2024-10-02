@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anuncio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .cajaanuncio {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 728px;
+            height: 90px;
+            background-color: #fff;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            position: relative;
+            padding: 10px;
+        }
+
+        .cajaanuncio img {
+            width: 70%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .texto {
+            font-size: 18px;
+            font-weight: bold;
+            color: #C906B6;
+            margin-left: 10px;
+        }
+
+        .boton {
+            display: inline-block;
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 14px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+            margin-left: 10px;
+        }
+
+        .boton:hover {
+            background-color: #0056b3;
+        }
+
+        /* Responsivo para pantallas pequeñas */
+        @media (max-width: 480px) {
+            .cajaanuncio {
+                width: 300px;
+                height: 600px;
+                flex-direction: column;
+                justify-content: space-between;
+                padding: 10px;
+            }
+
+            .cajaanuncio img {
+                width: 100%;
+                height: 70%;
+            }
+
+            .texto {
+                font-size: 22px;
+                text-align: center;
+                margin-top: 10px;
+            }
+
+            .boton {
+                width: 90%;
+                text-align: center;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cajaanuncio">
+        <img src="anuncio.jpg" alt="Anuncio">
+        <span class="texto">¡Consultá por nuestros productos!</span>
+        <a href="https://rmihura.github.io/anuncio.html" class="boton">Ir al sitio</a>
+    </div>
+</body>
+</html>
