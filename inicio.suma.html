@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Inicio</title>
+    <link rel="stylesheet" type="text/css" href="suma css.css">
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="menu-icon icono" onclick="menu()">&#9776;</div>
+            <div class="search-bar">
+                <input type="text" placeholder="¿Qué estás buscando?">
+                <button class="search-icon">&#128269;</button>
+            </div>
+            <div class="cart-icon">
+                &#128722; <span class="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    
+    <nav id="navegador" class=" ">
+    <div id="menu-box" class="menu-box">
+        <ul>
+            <li><a href="index.html">INICIO</a></li>
+            <hr>
+            <li><a href="productos.html">PRODUCTOS</a></li>
+            <hr>
+            <li><a href="electrolitos.html">ELECTROLITOS</a></li>
+            <hr>
+            <li><a href="sobre-nosotros.html">SOBRE NOSOTROS</a></li>
+            <hr>
+            <li><a href="contacto.html">CONTACTO</a></li>
+        </ul>
+    </div>
+</nav>
+
+    <section class="logo">
+    <a href="index.html">
+        <img src="logosuma.jpg" alt="logosuma">
+    </a>
+</section>
+    
+    <section class="main-images">
+        <div class="image-container">
+            <img src="Suma1.jpg" alt="Imagen Suma 1">
+        </div>
+        <div class="image-container">
+            <img src="Suma2.jpg" alt="Imagen Suma 2">
+        </div>
+    </section>
+
+    <footer>
+    <div class="contact-info">
+        <h2>Información de contacto</h2>
+        <p><img src="wpp.png" alt="WhatsApp" width="20" height="20"> <a href="tel:+5491144379911">+54 911 4437-9911</a></p>
+        <p><img src="instagram.png" alt="Instagram" width="20" height="20"> <a href="https://instagram.com/drink.suma" target="_blank">@drinksuma</a></p>
+    </div>
+</footer>
+
+
+    <script>
+       function menu() {
+    var x = document.getElementById("navegador");
+    if (x.className === " ") {
+        x.className += "mostrar";
+    } else {
+        x.className = " ";
+    }
+}
+		
+    </script>
+</body>
+</html>

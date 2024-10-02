@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros - Suma</title>
+    <link rel="stylesheet" type="text/css" href="suma css.css">
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="menu-icon icono" onclick="menu()">&#9776;</div>
+            <div class="search-bar">
+                <input type="text" placeholder="¿Qué estás buscando?">
+                <button class="search-icon">&#128269;</button>
+            </div>
+            <div class="cart-icon">
+                &#128722; <span class="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menú lateral desplegable -->
+    <nav id="navegador" class=" ">
+        <!-- Caja estética que contiene las opciones del menú -->
+        <div id="menu-box" class="menu-box">
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <hr>
+                <li><a href="productos.html">PRODUCTOS</a></li>
+                <hr>
+                <li><a href="electrolitos.html">ELECTROLITOS</a></li>
+                <hr>
+                <li><a href="sobre-nosotros.html">SOBRE NOSOTROS</a></li>
+                <hr>
+                <li><a href="contacto.html">CONTACTO</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="logo">
+        <a href="index.html">
+            <img src="logosuma.jpg" alt="logosuma">
+        </a>
+    </section>
+
+    <section class="about-us">
+        <h1>Quienes somos</h1>
+        <p>Somos Drink Suma. Producimos suplementos naturales que tengan un efecto probado en mejorar la performance y calidad de vida de las personas.</p>
+        <p>Nos obsesiona la hidratación y por eso nuestro primer producto es un sobre con electrolitos: Sodio, Potasio y Magnesio. Todo lo que necesitas para una hidratación ideal, sin azúcar, cafeína, calorías ni agregados químicos.</p>
+        <h1>Nuestra historia</h1>
+        <p>El camino de Drink Suma comenzó en el año 2022, cuando entre amigos decidimos poner a prueba nuestra resistencia física, empezando un ciclo de entrenamiento con la meta final de completar el Ironman 70.3 en Río de Janeiro. De un día para otro, nos encontramos llevando nuestro cuerpo al límite casi todos los días, y al mismo tiempo trabajando largas horas en entornos corporativos que requerían un gran esfuerzo mental.</p>
+        <img src="ironman.jpg" alt="Ironman" class="about-image" style="width: 100%; max-width: 600px; max-height: 400px; border-radius: 8px; margin: 20px 0;">
+        <p>Rápidamente nos dimos cuenta que para sostener el nivel de exigencia física y a la vez rendir en nuestro trabajo con máxima energía, teníamos que cambiar aspectos del cuidado de nuestro cuerpo. Empezamos por lo más conocido: ajustar nuestra alimentación. Sentimos la diferencia, una alimentación adecuada ayudaba. Sin embargo, todavía no nos sentíamos al 100%: aparecían calambres, no nos recuperábamos muscularmente y hasta nos dolía la cabeza en ciertos momentos del día.</p>
+        <p>En medio de esta etapa de experimentación, un gran amigo nos introdujo una nueva manera de hidratarse que consistía en combinar agua con una dosis alta de electrolitos (Sodio, Potasio, y Magnesio). Investigando, nos enteramos que nuestro cuerpo diariamente pierde estos minerales en cantidades significativas y la dieta promedio no llega a reponerlos. Con algunos clicks más encontramos incontables ejemplos de personas que a través de una mejor hidratación usando estos minerales habían logrado cambiar por completo su estilo de vida. El único problema es que todavía no existía un producto de estas características en nuestra región.</p>
+        <p>En consecuencia, desarrollamos nuestra propia fórmula de electrolitos para cubrir nuestras necesidades de hidratación. Fuimos refinando variantes del producto a fuerza de prueba y error en varias disciplinas como triatlones y ultramaratones, mientras otros amigos con diferentes estilos de vida también empezaron a consumirlo. En todos los casos el resultado fue un éxito.</p>
+        <img src="laboratorio.jpg" alt="Laboratorio" class="about-image" style="width: 100%; max-width: 600px; max-height: 400px; border-radius: 8px; margin: 20px 0;">
+        <p>Así fue como decidimos que teníamos que armar una empresa que se enfoque plenamente en algo tan básico e importante como la hidratación. Eventualmente nos rodeamos de expertos en el área como nutricionistas, ingenieros en alimentos y laboratorios especializados para llegar a la fórmula perfecta, creando así una combinación ideal de electrolitos, sin aditivos artificiales ni azúcares.</p>
+        <p>Así nació SUMA, un producto pensado para acompañarte en tus objetivos diarios, tanto físicos como mentales. Somos tres amigos que impulsados por la pasión y la motivación queremos compartir con nuestra comunidad los beneficios de una hidratación adecuada.</p>
+    </section>
+
+    <footer>
+        <div class="contact-info">
+            <h2>Información de contacto</h2>
+            <p><img src="wpp.png" alt="WhatsApp" width="20" height="20"> <a href="tel:+5491144379911">+54 911 4437-9911</a></p>
+            <p><img src="instagram.png" alt="Instagram" width="20" height="20"> <a href="https://instagram.com/drink.suma" target="_blank" rel="noopener noreferrer">@drinksuma</a></p>
+        </div>
+    </footer>
+
+    <script>
+        function menu() {
+            var x = document.getElementById("navegador");
+            if (x.className === " ") {
+                x.className += "mostrar";
+            } else {
+                x.className = " ";
+            }
+        }
+    </script>
+</body>
+</html>
