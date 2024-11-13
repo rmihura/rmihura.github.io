@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Productos</title>
+    <link rel="stylesheet" href="css/lightbox.min.css">
     <link rel="stylesheet" type="text/css" href="suma css.css">
 </head>
 <body>
@@ -47,14 +48,121 @@
         <div class="product-grid">
             <!-- Producto 1 -->
             <div class="product-item">
-                <img src="caja30mix.jpg" alt="Mix Sabores Electrolitos - Caja 30 unidades">
+                <a href="caja15mix.jpg" data-lightbox="fotos"><img src="caja15mix.jpg" alt="Mix Sabores Electrolitos - Caja 15 unidades" class="caja15mix"></a>
+                <h2>Mix Sabores Electrolitos - Caja 15 unidades</h2>
+                <p>$30,000</p>
+                <button>Comprar</button>
+            </div>
+            <!-- Producto 2 -->
+            <div class="product-item">
+                <a href="caja15mix.jpg" data-lightbox="fotos"><img src="caja15mix.jpg" alt="Mix Sabores Electrolitos - Caja 15 unidades" class="caja15mix"></a>
+                <h2>Mix Sabores Electrolitos - Caja 15 unidades</h2>
+                <p>$30,000</p>
+                <button>Comprar</button>
+            </div>
+            <!-- Producto 3 -->
+            <div class="product-item">
+                <a href="cajalimon30.jpg" data-lightbox="fotos"><img src="cajalimon30.jpg" alt="Lima Limón Electrolitos - Caja 30 unidades" class="cajalimon30"></a>
+                <h2>Lima Limón Electrolitos - Caja 30 unidades</h2>
+                <p>$60,000</p>
+                <button>Comprar</button>
+            </div>
+            <!-- Producto 4 -->
+            <div class="product-item">
+                <a href="cajanaranja30.jpg" data-lightbox="fotos"><img src="cajanaranja30.jpg" alt="Naranja Electrolitos - Caja 30 unidades" class="cajanaranja30"></a>
+                <h2>Naranja Electrolitos - Caja 30 unidades</h2>
+                <p>$60,000</p>
+                <button>Comprar</button>
+            </div>
+            <!-- Producto 5 -->
+            <div class="product-item">
+                <a href="cajafrutos30.jpg" data-lightbox="fotos"><img src="cajafrutos30.jpg" alt="Frutos Rojos Electrolitos - Caja 30 unidades" class="cajafrutos30"></a>
+                <h2>Frutos Rojos Electrolitos - Caja 30 unidades</h2>
+                <p>$60,000</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="contact-info">
+            <h2>Información de contacto</h2>
+            <p><img src="wpp.png" alt="WhatsApp" width="20" height="20"> <a href="tel:+5491144379911">+54 911 4437-9911</a></p>
+            <p><img src="instagram.png" alt="Instagram" width="20" height="20"> <a href="https://instagram.com/drink.suma" target="_blank">@drinksuma</a></p>
+        </div>
+    </footer>
+
+    <script>
+        function menu() {
+            var x = document.getElementById("navegador");
+            if (x.className === "") {
+                x.className += " mostrar";
+            } else {
+                x.className = "";
+            }
+        }
+    </script>
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="css/lightbox.min.css">
+	<link rel="stylesheet" type="text/css" href="suma css.css">
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="menu-icon icono" onclick="menu()">&#9776;</div>
+            <div class="search-bar">
+                <input type="text" placeholder="¿Qué estás buscando?">
+                <button class="search-icon">&#128269;</button>
+            </div>
+            <div class="cart-icon">
+                &#128722; <span class="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <nav id="navegador" class="">
+        <div id="menu-box" class="menu-box">
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <hr>
+                <li><a href="productos.html">PRODUCTOS</a></li>
+                <hr>
+                <li><a href="electrolitos.html">ELECTROLITOS</a></li>
+                <hr>
+                <li><a href="sobre-nosotros.html">SOBRE NOSOTROS</a></li>
+                <hr>
+                <li><a href="contacto.html">CONTACTO</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <section class="logo">
+        <a href="index.html">
+            <img src="logosuma.jpg" alt="logosuma">
+        </a>
+    </section>
+
+    <section class="products">
+        <h1>Productos</h1>
+        <div class="product-grid">
+            <!-- Producto 1 -->
+            <div class="product-item">
+                <img src="caja30mix.jpg" data-lightbox= "fotos" alt="Mix Sabores Electrolitos - Caja 30 unidades">
                 <h2>Mix Sabores Electrolitos - Caja 30 unidades</h2>
                 <p>$60,000</p>
                 <button>Comprar</button>
             </div>
             <!-- Producto 2 -->
             <div class="product-item">
-                <img src="caja15mix.jpg" alt="Mix Sabores Electrolitos - Caja 15 unidades">
+                <img src="caja15mix.jpg" data-lightbox= "fotos" alt="Mix Sabores Electrolitos - Caja 15 unidades">
                 <h2>Mix Sabores Electrolitos - Caja 15 unidades</h2>
                 <p>$30,000</p>
                 <button>Comprar</button>
@@ -101,5 +209,6 @@
             }
         }
     </script>
+<script src= "js/lightbox-plus-jquery.min.js"></script>
 </body>
 </html>
