@@ -394,7 +394,27 @@ p {
     height: 90px;
     border: none;
 }
+.footer-button {
+    text-align: center;
+    margin: 20px 0;
+}
 
+.btn-presentation {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FFA200;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-presentation:hover {
+    background-color: #FF8700;
+    transform: scale(1.05);
+}
 @media (max-width: 480px) {
     .anuncio-amigo iframe {
         width: 300px;
